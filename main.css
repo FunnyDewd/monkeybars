@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700|Ubuntu+Mono&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #fce;
+}
+
+pre, code {
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
+main {
+    width: 1080px;
+    margin: 0 auto;
+    background: #ffe;
+    padding: 20px;
+    border: 1px solid #dbc;
+}
+.snippet {
+    display: block;
+    background: peachpuff;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 0.4rem;
+}

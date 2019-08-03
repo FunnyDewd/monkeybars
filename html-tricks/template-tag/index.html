@@ -5,52 +5,45 @@
     <title>HTML Template Tag</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link rel="stylesheet" href="css/main.css"> -->
-
-    <style type="text/css">
-      .snippet {
-        display: block;
-        background: peachpuff;
-        color: darkblue;
-        font-weight: bold;
-        font-size: 1.3em;
-        padding: 0.4rem;
-      }
-    </style>
+    <link rel="stylesheet" href="../../main.css" />
   </head>
 
   <body>
-    <h1>HTML Template Tag</h1>
-    <p>
-      The <strong>template</strong> tag in HTML acts as a mechanism for adding
-      html markup to a page that, while it doesn't render immediately, can be
-      cloned and rendered on the page later via javascript. HTML templates mimic
-      the kind of templating previously done with libraries like handlebars or
-      mustache.
-    </p>
-    <h2>How does it work?</h2>
-    <p>
-      In your html, include a template tag with a way to access the tag via
-      javascript, an id is easiest.
-    </p>
-    <code class="snippet">
-      &lt;template id="personal"&gt;Apply for a personal loan.&lt;/template&gt;
-    </code>
+    <main>
+      <h1>HTML Template Tag</h1>
+      <p>
+        The <strong>template</strong> tag in HTML acts as a mechanism for adding
+        html markup to a page that, while it doesn't render immediately, can be
+        cloned and rendered on the page later via javascript. HTML templates
+        mimic the kind of templating previously done with libraries like
+        handlebars or mustache.
+      </p>
+      <h2>How does it work?</h2>
+      <p>
+        In your html, include a template tag with a way to access the tag via
+        javascript, an id is easiest.
+      </p>
+      <code class="snippet">
+        &lt;template id="personal"&gt;Apply for a personal
+        loan.&lt;/template&gt;
+      </code>
 
-    <code class="snippet">
-      &lt;template id="business"&gt;Apply for a business loan.&lt;/template&gt;
-    </code>
+      <code class="snippet">
+        &lt;template id="business"&gt;Apply for a business
+        loan.&lt;/template&gt;
+      </code>
 
-    <h2>Example</h2>
-    <p>
-      An example of using templates would be an instance where you have choices
-      for some sort of long-form content.
-    </p>
+      <h2>Example</h2>
+      <p>
+        An example of using templates would be an instance where you have
+        choices for some sort of long-form content.
+      </p>
 
-    <p>
-      Say you have an application where you have two different registration
-      forms, one for an individual and one for a business. You can use templates
-      to show the correct form depending on the customer's choice.
-    </p>
+      <p>
+        Say you have an application where you have two different registration
+        forms, one for an individual and one for a business. You can use
+        templates to show the correct form depending on the customer's choice.
+      </p>
+    </main>
   </body>
 </html>
