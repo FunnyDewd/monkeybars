@@ -1,38 +1,72 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700|Ubuntu+Mono&display=swap');
 
+/* Color Theme Swatches in RGBA */
+.theme-metal {
+    --color-1: rgba(38, 40, 45, 1);
+    --color-2: rgba(218, 87, 77, 1);
+    --color-3: rgba(246, 246, 246, 1);
+    --color-4: rgba(221, 218, 223, 1);
+    --color-5: rgba(133, 147, 174, 1);
+    --header-font: 'Open Sans Condensed', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    --code-font: 'Ubuntu Mono', monospace;
+}
+
+/* IE 11 doesn't support css variable (custom properties) so, we need a fallback. Unfortunately no themes for IE. */
 * {
     font-family: 'Open Sans', sans-serif;
+    font-family: var(--body-font);
 }
 
 body {
-    background: #fce;
+    background-color: rgba(133, 147, 174, 1);
+    background-color: var(--color-5);
 }
 
 pre, code {
     font-family: 'Ubuntu Mono', monospace;
+    font-family: var(--code-font);
     font-weight: 100;
+    margin: 1rem 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans Condensed', sans-serif;
+    font-family: var(--header-font);
+    margin: 0;
+    padding: 1em 0 .15em 0;
+}
+
+h1 {
+    padding-top: 0
 }
 
 p {
-    line-height: 1.4;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 0 .75em 0;
 }
 
 main {
+    display: block; /* for IE support */
     width: 1080px;
     margin: 0 auto;
-    background: #ffe;
+    background:   rgba(246, 246, 246, 1); 
+    background: var(--color-3);
     padding: 20px;
-    border: 1px solid #dbc;
+    border: 1px solid var(--color-5);
 }
 .snippet {
     display: block;
-    background: peachpuff;
-    color: darkblue;
+    background-color: rgba(38, 40, 45, 1);
+    background: var(--color-1);
+    color: rgba(221, 218, 223, 1);
+    color: var(--color-4);
     font-weight: bold;
     font-size: 1.3em;
-    padding: 0.4rem;
+    padding: 1.5rem;
+}
+
+/* IE 10+ overrides here */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 }
