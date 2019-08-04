@@ -23,13 +23,6 @@ body {
     background-color: var(--color-5);
 }
 
-pre, code {
-    font-family: 'Ubuntu Mono', monospace;
-    font-family: var(--code-font);
-    font-weight: 100;
-    margin: 1rem 0;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans Condensed', sans-serif;
     font-family: var(--header-font);
@@ -55,16 +48,6 @@ main {
     background: var(--color-3);
     padding: 20px;
     border: 1px solid var(--color-5);
-}
-.snippet {
-    display: block;
-    background-color: rgba(38, 40, 45, 1);
-    background: var(--color-1);
-    color: rgba(221, 218, 223, 1);
-    color: var(--color-4);
-    font-weight: bold;
-    font-size: 1.3em;
-    padding: 1.5rem;
 }
 
 /* IE 10+ overrides here */
