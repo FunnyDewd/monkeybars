@@ -25,12 +25,8 @@
         In your html, include a template tag with a way to access the tag via
         javascript, an id is easiest.
       </p>
-      <pre><code class="language-html line-numbers">
-        &lt;template id="personal"&gt;Apply for a personal loan:&lt;/template&gt;
-      </code></pre>
-      <pre><code class="language-html line-numbers">
-        &lt;template id="business"&gt;Apply for a business loan:&lt;/template&gt;
-      </code></pre>
+      <pre><code class="language-html">&lt;template id="personal"&gt;Apply for a personal loan:&lt;/template&gt;</code></pre>
+      <pre><code class="language-html">&lt;template id="business"&gt;Apply for a business loan:&lt;/template&gt;</code></pre>
 
       <h2>Example</h2>
       <p>
@@ -43,6 +39,20 @@
         forms, one for an individual and one for a business. You can use
         templates to show the correct form depending on the customer's choice.
       </p>
+
+      <template id="register-personal">
+        <form action="#register" action="post">
+          <fieldset>
+            <legend>Register for a personal account:</legend>
+          </fieldset>
+        </form>
+      </template>
+
+      <template id="register-business"> </template>
+
+      <aside class="example">
+        <p>Example goes here</p>
+      </aside>
     </main>
   </body>
 </html>
